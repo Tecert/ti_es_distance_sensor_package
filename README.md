@@ -1,12 +1,12 @@
-**# ti_es_distance_sensor_package
-This repository is for the detection of obstacles around the telescope. For now, three ultrasone sensors are connected to the Arduino Uno. The Arduino Uno communicates with the Rasperry Pi 4B through I2C. The output of the communication is as follows:
+ti_es_distance_sensor_package
 
-One byte is sent from the Arduino Uno to the Rasperry Pi. The first four bits are used for the communication. The rest are unused for now.
+This repository is for the detection of obstacles around the telescope. For now, three ultrasone sensors are connected to the Arduino Uno. The Arduino Uno is at slave address 0x08 and communicates with the Rasperry Pi 4B through I2C. The output of the communication is as follows:
+
+One byte is sent from the Arduino Uno to the Rasperry Pi. The first four bits are used for the communication. The rest are unused. For now three sensors have been connected to the Arduino Uno. Bits that are inuse will change according to the amount of ultrasone sensor's that are connected
 
 Bit 0 is a verification bit to verify if data has been sent to the master when requested
-If data has been sent to the master from the slave the verification bit(bit 0) will be 1**
+If data has been sent to the master from the slave, the verification bit(bit 0) will be 1
 Otherwise the bit will be zero
-For now three sensors have been connected to the Arduino Uno. 
 
 This is how the communiction works:
 0x00 = no data has been sent from the slave to the master, this data is incorrect
