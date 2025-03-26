@@ -13,7 +13,8 @@ This is how the communiction works:
 
 Bits designated for the sensors work as follows:
 
-The value of the bit will be 0 if there is no detection within 10 cm of the ultrasone sensor. The value of the bit will be 1 if an object has been detected within 10 cm of the sensor.
+The value of the bit will be 0 if there is no detection within 10 cm of the ultrasone sensor. 
+The value of the bit will be 1 if an object has been detected within 10 cm of the sensor.
 Bit 1 is for (name of ultrasone sensor one)
 Bit 2 is for (name of ultrasone sensor two)
 Bit 3 is for (name of ultrasone sensor three)
