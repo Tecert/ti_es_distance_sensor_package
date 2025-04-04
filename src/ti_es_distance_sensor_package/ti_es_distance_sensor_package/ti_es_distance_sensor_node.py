@@ -2,6 +2,7 @@
 # Decide how many ultrasone sensors are going to be used so that can be final
 # Sometimes I get this out of nowhere No distance data received from I2C device with address 8 and bus 1, probably because the rasperry is requesting too much too soon
 # Ask Nico how to implement log code in here
+# Make sure that the code continues to run when an error has been given
 
 import lgpio
 from datetime import date
@@ -32,17 +33,18 @@ class I2CNoDataError(Exception):
 # If data has been sent to the master from the slave the verification bit(bit 0) will be 1
 # Otherwise the bit will be zero
 
-# For now three sensors have been connected to the Arduino Uno. This is how the communiction works:
+# For now four sensors have been connected to the Arduino Uno. This is how the communiction works:
 
 # 0x00 = no data has been sent from the slave to the master, this data is incorrect 
 # 0x01 = data has been sent from the slave to the master, this data is correct
 
 # Bits designated for the sensors work as follows
 # 0 means that there is no detection within 10 cm and 1 means an object has been detected within 10 cm of the sensor
-# 
+
 # Bit 1 is for <name of ultrasone sensor one>
 # Bit 2 is for <name of ultrasone sensor two>
 # Bit 3 is for <name of ultrasone sensor three>
+# Bit 4 is for <name of ultrasone sensor four>
 
 # To see where the placements of the ultrasone sensors go to this document : <document of the position of the ultrasone sensors on the telescope>
 def connect_I2C():
