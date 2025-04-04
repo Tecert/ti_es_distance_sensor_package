@@ -1,0 +1,37 @@
+[4.159s] Invoking command in '/home/clare/Documents/ros_workplace/src/ti_es_distance_sensor_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ti_es_distance_sensor_package build --build-base /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build install --record /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/install.log --single-version-externally-managed install_data
+[5.478s] running egg_info
+[5.479s] creating ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info
+[5.580s] writing ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/PKG-INFO
+[5.581s] writing dependency_links to ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/dependency_links.txt
+[5.584s] writing entry points to ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/entry_points.txt
+[5.585s] writing requirements to ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/requires.txt
+[5.585s] writing top-level names to ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/top_level.txt
+[5.586s] writing manifest file '../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/SOURCES.txt'
+[5.824s] reading manifest file '../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/SOURCES.txt'
+[5.827s] writing manifest file '../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/SOURCES.txt'
+[5.827s] running build
+[5.828s] running build_py
+[5.829s] creating /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build
+[5.829s] creating /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build/lib
+[5.830s] creating /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build/lib/ti_es_distance_sensor_package
+[5.830s] copying ti_es_distance_sensor_package/ti_es_distance_sensor_node.py -> /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build/lib/ti_es_distance_sensor_package
+[5.831s] copying ti_es_distance_sensor_package/__init__.py -> /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build/lib/ti_es_distance_sensor_package
+[5.832s] running install
+[5.861s] running install_lib
+[5.966s] creating /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages/ti_es_distance_sensor_package
+[5.967s] copying /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build/lib/ti_es_distance_sensor_package/ti_es_distance_sensor_node.py -> /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages/ti_es_distance_sensor_package
+[5.968s] copying /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build/lib/ti_es_distance_sensor_package/__init__.py -> /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages/ti_es_distance_sensor_package
+[5.970s] byte-compiling /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages/ti_es_distance_sensor_package/ti_es_distance_sensor_node.py to ti_es_distance_sensor_node.cpython-312.pyc
+[5.973s] byte-compiling /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages/ti_es_distance_sensor_package/__init__.py to __init__.cpython-312.pyc
+[5.974s] running install_data
+[5.974s] creating /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/share/ament_index
+[5.975s] creating /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/share/ament_index/resource_index
+[5.976s] creating /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/share/ament_index/resource_index/packages
+[5.976s] copying resource/ti_es_distance_sensor_package -> /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/share/ament_index/resource_index/packages
+[5.977s] copying package.xml -> /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/share/ti_es_distance_sensor_package
+[5.977s] running install_egg_info
+[6.091s] Copying ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info to /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages/ti_es_distance_sensor_package-0.0.0-py3.12.egg-info
+[6.147s] running install_scripts
+[6.906s] Installing ti_es_distance_sensor_node script to /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/ti_es_distance_sensor_package
+[6.907s] writing list of installed files to '/home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/install.log'
+[7.081s] Invoked command in '/home/clare/Documents/ros_workplace/src/ti_es_distance_sensor_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ti_es_distance_sensor_package build --build-base /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build install --record /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/install.log --single-version-externally-managed install_data

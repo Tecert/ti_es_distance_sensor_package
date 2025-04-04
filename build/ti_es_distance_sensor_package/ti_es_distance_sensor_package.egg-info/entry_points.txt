@@ -1,0 +1,2 @@
+[console_scripts]
+ti_es_distance_sensor_node = ti_es_distance_sensor_package.ti_es_distance_sensor_node:main
