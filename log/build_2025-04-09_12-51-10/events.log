@@ -1,0 +1,114 @@
+[0.000000] (-) TimerEvent: {}
+[0.001794] (ti_es_distance_sensor_package) JobQueued: {'identifier': 'ti_es_distance_sensor_package', 'dependencies': OrderedDict()}
+[0.003179] (ti_es_distance_sensor_package) JobStarted: {'identifier': 'ti_es_distance_sensor_package'}
+[0.099238] (-) TimerEvent: {}
+[0.200006] (-) TimerEvent: {}
+[0.300624] (-) TimerEvent: {}
+[0.401327] (-) TimerEvent: {}
+[0.502016] (-) TimerEvent: {}
+[0.602671] (-) TimerEvent: {}
+[0.703273] (-) TimerEvent: {}
+[0.803846] (-) TimerEvent: {}
+[0.904402] (-) TimerEvent: {}
+[1.005044] (-) TimerEvent: {}
+[1.105856] (-) TimerEvent: {}
+[1.207323] (-) TimerEvent: {}
+[1.307971] (-) TimerEvent: {}
+[1.408604] (-) TimerEvent: {}
+[1.509325] (-) TimerEvent: {}
+[1.610081] (-) TimerEvent: {}
+[1.710822] (-) TimerEvent: {}
+[1.811418] (-) TimerEvent: {}
+[1.912035] (-) TimerEvent: {}
+[2.012604] (-) TimerEvent: {}
+[2.113267] (-) TimerEvent: {}
+[2.214135] (-) TimerEvent: {}
+[2.314823] (-) TimerEvent: {}
+[2.415600] (-) TimerEvent: {}
+[2.516307] (-) TimerEvent: {}
+[2.617239] (-) TimerEvent: {}
+[2.718371] (-) TimerEvent: {}
+[2.819247] (-) TimerEvent: {}
+[2.920254] (-) TimerEvent: {}
+[3.021131] (-) TimerEvent: {}
+[3.122024] (-) TimerEvent: {}
+[3.223128] (-) TimerEvent: {}
+[3.323786] (-) TimerEvent: {}
+[3.424437] (-) TimerEvent: {}
+[3.525167] (-) TimerEvent: {}
+[3.625918] (-) TimerEvent: {}
+[3.726679] (-) TimerEvent: {}
+[3.827416] (-) TimerEvent: {}
+[3.928004] (-) TimerEvent: {}
+[4.028593] (-) TimerEvent: {}
+[4.129281] (-) TimerEvent: {}
+[4.230025] (-) TimerEvent: {}
+[4.330728] (-) TimerEvent: {}
+[4.431403] (-) TimerEvent: {}
+[4.532040] (-) TimerEvent: {}
+[4.632622] (-) TimerEvent: {}
+[4.733266] (-) TimerEvent: {}
+[4.833852] (-) TimerEvent: {}
+[4.934422] (-) TimerEvent: {}
+[5.035044] (-) TimerEvent: {}
+[5.135646] (-) TimerEvent: {}
+[5.236304] (-) TimerEvent: {}
+[5.337019] (-) TimerEvent: {}
+[5.437893] (-) TimerEvent: {}
+[5.539058] (-) TimerEvent: {}
+[5.620797] (ti_es_distance_sensor_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ti_es_distance_sensor_package', 'build', '--build-base', '/home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build', 'install', '--record', '/home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/clare/Documents/ros_workplace/src/ti_es_distance_sensor_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'clare', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/clare', 'OLDPWD': '/home/clare', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2743', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/clare/Documents/ros_workplace/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'clare', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'clare', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/clare-desktop:@/tmp/.ICE-unix/2708,unix/clare-desktop:/tmp/.ICE-unix/2708', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/655a266a_d10f_412e_a1d6_a3ed7447652d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.MTFL42', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.102', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages:/home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[5.640527] (-) TimerEvent: {}
+[5.741239] (-) TimerEvent: {}
+[5.841883] (-) TimerEvent: {}
+[5.942496] (-) TimerEvent: {}
+[6.043182] (-) TimerEvent: {}
+[6.143874] (-) TimerEvent: {}
+[6.244464] (-) TimerEvent: {}
+[6.345095] (-) TimerEvent: {}
+[6.445670] (-) TimerEvent: {}
+[6.546329] (-) TimerEvent: {}
+[6.647030] (-) TimerEvent: {}
+[6.747635] (-) TimerEvent: {}
+[6.848313] (-) TimerEvent: {}
+[6.941620] (ti_es_distance_sensor_package) StdoutLine: {'line': b'running egg_info\n'}
+[6.948503] (-) TimerEvent: {}
+[7.037263] (ti_es_distance_sensor_package) StdoutLine: {'line': b'writing ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/PKG-INFO\n'}
+[7.041579] (ti_es_distance_sensor_package) StdoutLine: {'line': b'writing dependency_links to ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/dependency_links.txt\n'}
+[7.047691] (ti_es_distance_sensor_package) StdoutLine: {'line': b'writing entry points to ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/entry_points.txt\n'}
+[7.048785] (ti_es_distance_sensor_package) StdoutLine: {'line': b'writing requirements to ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/requires.txt\n'}
+[7.049405] (-) TimerEvent: {}
+[7.050362] (ti_es_distance_sensor_package) StdoutLine: {'line': b'writing top-level names to ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/top_level.txt\n'}
+[7.149661] (-) TimerEvent: {}
+[7.250362] (-) TimerEvent: {}
+[7.254279] (ti_es_distance_sensor_package) StdoutLine: {'line': b"reading manifest file '../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/SOURCES.txt'\n"}
+[7.274560] (ti_es_distance_sensor_package) StdoutLine: {'line': b"writing manifest file '../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info/SOURCES.txt'\n"}
+[7.279953] (ti_es_distance_sensor_package) StdoutLine: {'line': b'running build\n'}
+[7.280631] (ti_es_distance_sensor_package) StdoutLine: {'line': b'running build_py\n'}
+[7.334425] (ti_es_distance_sensor_package) StdoutLine: {'line': b'copying ti_es_distance_sensor_package/ti_es_distance_sensor_node.py -> /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build/lib/ti_es_distance_sensor_package\n'}
+[7.350591] (-) TimerEvent: {}
+[7.356857] (ti_es_distance_sensor_package) StdoutLine: {'line': b'running install\n'}
+[7.389870] (ti_es_distance_sensor_package) StdoutLine: {'line': b'running install_lib\n'}
+[7.450713] (-) TimerEvent: {}
+[7.493703] (ti_es_distance_sensor_package) StdoutLine: {'line': b'copying /home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/build/lib/ti_es_distance_sensor_package/ti_es_distance_sensor_node.py -> /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages/ti_es_distance_sensor_package\n'}
+[7.497893] (ti_es_distance_sensor_package) StdoutLine: {'line': b'byte-compiling /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages/ti_es_distance_sensor_package/ti_es_distance_sensor_node.py to ti_es_distance_sensor_node.cpython-312.pyc\n'}
+[7.502246] (ti_es_distance_sensor_package) StdoutLine: {'line': b'running install_data\n'}
+[7.505540] (ti_es_distance_sensor_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.550919] (-) TimerEvent: {}
+[7.615373] (ti_es_distance_sensor_package) StdoutLine: {'line': b"removing '/home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages/ti_es_distance_sensor_package-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[7.617277] (ti_es_distance_sensor_package) StdoutLine: {'line': b'Copying ../../build/ti_es_distance_sensor_package/ti_es_distance_sensor_package.egg-info to /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/python3.12/site-packages/ti_es_distance_sensor_package-0.0.0-py3.12.egg-info\n'}
+[7.625881] (ti_es_distance_sensor_package) StdoutLine: {'line': b'running install_scripts\n'}
+[7.651059] (-) TimerEvent: {}
+[7.751663] (-) TimerEvent: {}
+[7.852399] (-) TimerEvent: {}
+[7.953000] (-) TimerEvent: {}
+[8.053584] (-) TimerEvent: {}
+[8.154182] (-) TimerEvent: {}
+[8.254852] (-) TimerEvent: {}
+[8.349182] (ti_es_distance_sensor_package) StdoutLine: {'line': b'Installing ti_es_distance_sensor_node script to /home/clare/Documents/ros_workplace/install/ti_es_distance_sensor_package/lib/ti_es_distance_sensor_package\n'}
+[8.353851] (ti_es_distance_sensor_package) StdoutLine: {'line': b"writing list of installed files to '/home/clare/Documents/ros_workplace/build/ti_es_distance_sensor_package/install.log'\n"}
+[8.354966] (-) TimerEvent: {}
+[8.455880] (-) TimerEvent: {}
+[8.530828] (ti_es_distance_sensor_package) CommandEnded: {'returncode': 0}
+[8.555894] (-) TimerEvent: {}
+[8.648885] (ti_es_distance_sensor_package) JobEnded: {'identifier': 'ti_es_distance_sensor_package', 'rc': 0}
+[8.652812] (-) EventReactorShutdown: {}

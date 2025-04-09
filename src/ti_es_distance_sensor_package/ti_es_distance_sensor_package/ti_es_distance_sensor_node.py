@@ -2,31 +2,20 @@
 # Decide how many ultrasone sensors are going to be used so that can be final
 # Sometimes I get this out of nowhere No distance data received from I2C device with address 8 and bus 1, probably because the rasperry is requesting too much too soon
 # Ask Nico how to implement log code in here
-# Make sure that the code continues to run when an error has been given
 
 import lgpio
-from datetime import date
-from datetime import datetime
+import time
 # Variable used for I2C_open and I2C_close
 I2C_connection = None
 
 # I2C address
-addr = 0x08 # bus address
+I2C_addr = 0x08 # bus address
 
-# I2C bus
+# I2C bus 1 is chosen for communication with I2C device
 I2C_bus = 1
 
-# Raised when a I2C bus could not be opened
-class I2CBusNotFoundError(OSError):
-    pass
-
-# Raised when a I2C device could not be found
-class I2CDeviceNotFoundError(OSError):
-    pass
-
-# Raised when I2C device has been connected to the Master but no data has been sent when requested
-class I2CNoDataError(Exception):
-    pass
+# read bytes
+I2C_read_bytes = 1
 
 
 # Bit 0 is a verification bit to verify if data has been sent to the master when requested
@@ -51,49 +40,48 @@ def connect_I2C():
     global I2C_connection
     # Try to open bus 1 with slave address 8. if bus can't be opened an error message is printed on the screen
     try:
-       I2C_connection= lgpio.i2c_open(I2C_bus, addr)
+       I2C_connection = lgpio.i2c_open(I2C_bus, I2C_addr)
     except KeyboardInterrupt:
         raise KeyboardInterrupt
     except:
-        raise I2CBusNotFoundError
+        print(f"Could not open bus with number {I2C_bus} and connect to I2C device at address {I2C_addr}")
+        return
     
     try:
-        data = lgpio.i2c_read_device(I2C_bus,1)
+        data = lgpio.i2c_read_device(I2C_bus,I2C_read_bytes)
     except KeyboardInterrupt:
         raise KeyboardInterrupt
     except:
-        raise I2CDeviceNotFoundError
+        print(f"Connection could not be established with I2C device at address {I2C_addr} and bus2 {I2C_bus}")
+        return
     
-    # If no data is received and the first value of the array is one, raise a I2CNoDataError
-    if(data[1][0] == 0):
-        raise I2CNoDataError
-    else:
-        print(data[1][0])
 
-    lgpio.i2c_close(I2C_connection)
+    try:
+        # If no data is received and the first value of the array is one, raise a I2CNoDataError
+        if(data[1][0] == 0):
+            print(f"No distance data received from I2C device with address {I2C_addr} and bus {I2C_bus}")
+        else:
+            print(data[1][0])
+
+    except KeyboardInterrupt:
+        raise KeyboardInterrupt
 
 
 def main():
- 
+    interval = 0.25
+    next_time = time.time() + interval
     try:
         while True:
-            connect_I2C()
+            current_time = time.time()
+            if current_time >= next_time:
+                connect_I2C()
+                next_time += interval
+            time.sleep(0.001)
+            
 
-    # Handle Exceptions and give information to the user about the situation
+    # Handle Keyboard Exception
     except KeyboardInterrupt:
         print("KeyboardInterrupt")
-        if I2C_connection!= None:
-            lgpio.i2c_close(I2C_connection)
-    except I2CBusNotFoundError:
-        print(f"Bus number {I2C_bus} could not be opened on device")  
-        if I2C_connection!= None:
-            lgpio.i2c_close(I2C_connection)
-    except I2CDeviceNotFoundError:
-        print(f"Connection could not be established with I2C device at address {addr} and bus {I2C_bus}")
-        if I2C_connection!= None:
-            lgpio.i2c_close(I2C_connection)
-    except I2CNoDataError:
-        print(f"No distance data received from I2C device with address {addr} and bus {I2C_bus}")
         if I2C_connection!= None:
             lgpio.i2c_close(I2C_connection)
 
