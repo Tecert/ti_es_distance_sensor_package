@@ -19,4 +19,42 @@ The value of the bit will be 1 if an object has been detected within 10 cm of th
 Bit 1 is for (name of ultrasone sensor one)\
 Bit 2 is for (name of ultrasone sensor two)\
 Bit 3 is for (name of ultrasone sensor three)\
-Bit 4 is for (name of ultrasone sensor four)
+Bit 4 is for (name of ultrasone sensor four)\
+
+Following are the pinout's for the Rasperry Pi and ultrasone sensors to the Arduino Uno:
+
+|Arduino Uno | Rasperry Pi |
+| ----- | --- |
+| SDA/A4 | SDA/GPIOO2 |
+| SCL/A4 | SCL/GPIOO3 |
+| Gnd | Gnd |\
+
+|Arduino Uno | Ultrasone sensor 1|
+| ----- | --- |
+| Vcc | Vcc |
+| D2 | Trig |
+| D3 | Echo|
+| Gnd | Gnd |\
+
+|Arduino Uno | Ultrasone sensor 2|
+| ----- | --- |
+| Vcc | Vcc |
+| D4 | Trig |
+| D5 | Echo|
+| Gnd | Gnd |\
+
+|Arduino Uno | Ultrasone sensor 3|
+| ----- | --- |
+| Vcc | Vcc |
+| D6 | Trig |
+| D7 | Echo|
+| Gnd | Gnd |\
+
+|Arduino Uno | Ultrasone sensor 4|
+| ----- | --- |
+| Vcc | Vcc |
+| D8 | Trig |
+| D9 | Echo|
+| Gnd | Gnd |\
+
+
