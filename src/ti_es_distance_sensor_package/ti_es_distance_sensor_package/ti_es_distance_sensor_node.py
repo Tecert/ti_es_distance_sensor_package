@@ -26,7 +26,7 @@ class UltrasoneSensorNode(Node):
         self.timer = self.create_timer(self.timer_period, self.read_sensor_data)
 
         # Publisher using String messages
-        self.publisher_ = self.create_publisher(String, 'distance', 10)
+        self.distance_publisher_ = self.create_publisher(String, 'ti/es/distance_data', 10)
         self.log_publisher_ = self.create_publisher(String, "ti/es/logger_data",10)
 
         # Connect to I2C device
@@ -79,7 +79,7 @@ class UltrasoneSensorNode(Node):
 
                 msg = String()
                 msg.data = f"Sensor byte: {binary_repr}"
-                self.publisher_.publish(msg)
+                self.distance_publisher_.publish(msg)
 
         except Exception:
             self.publish_log("error", f"Error reading I2C slave device on bus {self.I2C_bus} with address {self.I2C_addr}")

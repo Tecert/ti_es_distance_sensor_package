@@ -26,7 +26,7 @@ class UltrasoneSensorNode(Node):
         self.timer = self.create_timer(self.timer_period, self.read_sensor_data)
 
         # Publisher using String messages
-        self.publisher_ = self.create_publisher(String, 'distance', 10)
+        self._distance_publisher_ = self.create_publisher(String, 'ti/es/distance_data', 10)
         self.log_publisher_ = self.create_publisher(String, "ti/es/logger_data",10)
 
         # Connect to I2C device
