@@ -64,7 +64,7 @@ Following are the pinout's for the Rasperry Pi and ultrasone sensors to the Ardu
 #### On Rasperry Pi
 
 Clone the repository
-```[git clone https://github.com/Tecert/ti_es_distance_sensor_package](https://github.com/Tecert/ti_es_distance_sensor_package.git)```
+```git clone https://github.com/Tecert/ti_es_distance_sensor_package.git```
 
 Update the system\
 ```sudo apt update```
