@@ -1,8 +1,3 @@
-# Document has to be made where the ultrasone sensors are placed and what their names are, this will probably be in the designs
-# Decide how many ultrasone sensors are going to be used so that can be final
-# Sometimes I get this out of nowhere No distance data received from I2C device with address 8 and bus 1, probably because the rasperry is requesting too much too soon
-# Ask Nico how to implement log code in here
-
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
