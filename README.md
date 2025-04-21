@@ -1,4 +1,4 @@
-ti_es_distance_sensor_package
+## ti_es_distance_sensor_package
 
 This repository is for the detection of obstacles around the telescope. For now, four ultrasone sensors are connected to the Arduino Uno. The Arduino Uno is at slave address 0x08 and communicates with the Rasperry Pi 4B through I2C. The output of the communication is as follows:
 
@@ -57,4 +57,31 @@ Following are the pinout's for the Rasperry Pi and ultrasone sensors to the Ardu
 | D9 | Echo|
 | Gnd | Gnd |\
 
+---
 
+### How to install
+
+Clone the repository
+```[git clone https://github.com/Tecert/ti_es_distance_sensor_package](https://github.com/Tecert/ti_es_distance_sensor_package.git)```
+
+Update the system
+```sudo apt update```
+
+Install lgpio
+```sudo apt install lgpio```
+
+Move into the working directory
+```cd ti_es_distance_sensor_package```
+
+Set up environment to use your workspace's packages
+```source install/setup.bash```
+
+Builds the packages
+```colcon build```
+
+Run the code
+```ros2 run ti_es_distance_sensor_package ti_es_distance_sensor_node
+
+
+
+ 
