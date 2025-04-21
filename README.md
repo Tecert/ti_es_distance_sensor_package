@@ -61,27 +61,33 @@ Following are the pinout's for the Rasperry Pi and ultrasone sensors to the Ardu
 
 ### How to install
 
+#### On Rasperry Pi
+
 Clone the repository
 ```[git clone https://github.com/Tecert/ti_es_distance_sensor_package](https://github.com/Tecert/ti_es_distance_sensor_package.git)```
 
-Update the system
+Update the system\
 ```sudo apt update```
 
-Install lgpio
+Install lgpio\
 ```sudo apt install lgpio```
 
-Move into the working directory
+Move into the working directory\
 ```cd ti_es_distance_sensor_package```
 
-Set up environment to use your workspace's packages
+Set up environment to use your workspace's packages\
 ```source install/setup.bash```
 
-Builds the packages
+Builds the packages\
 ```colcon build```
 
-Run the code
-```ros2 run ti_es_distance_sensor_package ti_es_distance_sensor_node
+Run the code\
+```ros2 run ti_es_distance_sensor_package ti_es_distance_sensor_node```
 
 
+#### On Arduino Uno
 
+1. Download the file TI_ES_distance_sensor_arduino.ino to the computer
+2. Connect the computer to the Arduino Uno via the correct COM port
+3. Upload the code via Visual Studio Code or Arduino IDE to the Arduino Uno 
  
