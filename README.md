@@ -19,7 +19,7 @@ The value of the bit will be 1 if an object has been detected within 10 cm of th
 Bit 1 is for (name of ultrasone sensor one)\
 Bit 2 is for (name of ultrasone sensor two)\
 Bit 3 is for (name of ultrasone sensor three)\
-Bit 4 is for (name of ultrasone sensor four)\
+Bit 4 is for (name of ultrasone sensor four)
 
 Following are the pinout's for the Rasperry Pi and ultrasone sensors to the Arduino Uno:
 
